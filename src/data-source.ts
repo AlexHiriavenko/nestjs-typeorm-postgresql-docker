@@ -13,7 +13,7 @@ const AppDataSource = new DataSource({
   // entities: [Category, Product],
   entities: [__dirname + '/**/*.entity.{ts,js}'],
   //   migrations: [__dirname + '/../migrations/*.{ts,js}'], // Путь к миграциям
-  migrations: ['src/migrations/*.{ts,js}'],
+  migrations: ['src/db/migrations/*.{ts,js}'],
   synchronize: false,
   logging: true,
 });

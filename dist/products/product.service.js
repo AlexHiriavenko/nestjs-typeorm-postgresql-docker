@@ -22,6 +22,9 @@ let ProductService = class ProductService {
     async getBySearch(perPage, page, search) {
         return this.productRepository.getBySearch(perPage, page, search);
     }
+    async findById(id) {
+        return this.productRepository.findOne(id);
+    }
 };
 exports.ProductService = ProductService;
 exports.ProductService = ProductService = __decorate([

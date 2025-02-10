@@ -54,6 +54,9 @@ let ProductRepository = class ProductRepository {
         const totalPages = Math.ceil(total / perPage);
         return { products, totalPages, page, perPage };
     }
+    async findOne(id) {
+        return await this.productRepository.findOneBy({ id });
+    }
 };
 exports.ProductRepository = ProductRepository;
 exports.ProductRepository = ProductRepository = __decorate([

@@ -23,4 +23,6 @@ $ nest g service `name` --no-spec
 $ nest g provider `name`.repository
 $ nest g class `name`/`name`.entity
 
-## полезные TypeORM CLI команды:
+## скрипты для миграций:
+
+смотрите в package.json

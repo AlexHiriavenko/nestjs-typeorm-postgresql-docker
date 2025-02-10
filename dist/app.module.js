@@ -19,6 +19,7 @@ const app_controller_1 = require("./app.controller");
 const app_service_1 = require("./app.service");
 const categories_module_1 = require("./categories/categories.module");
 const products_module_1 = require("./products/products.module");
+const socket_module_1 = require("./websocket/socket.module");
 let AppModule = class AppModule {
     constructor(dataSource) {
         this.dataSource = dataSource;
@@ -61,6 +62,7 @@ exports.AppModule = AppModule = __decorate([
             books_module_1.BooksModule,
             categories_module_1.CategoriesModule,
             products_module_1.ProductsModule,
+            socket_module_1.SocketModule,
         ],
         controllers: [app_controller_1.AppController],
         providers: [app_service_1.AppService],

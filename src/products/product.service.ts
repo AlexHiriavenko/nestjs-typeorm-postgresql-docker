@@ -17,4 +17,8 @@ export class ProductService {
   async getBySearch(perPage: number, page: number, search: string) {
     return this.productRepository.getBySearch(perPage, page, search);
   }
+
+  async findById(id: number) {
+    return this.productRepository.findOne(id);
+  }
 }

@@ -11,4 +11,5 @@ export declare class ProductRepository {
     constructor(productRepository: Repository<Product>);
     findAllWithPagination(perPage: number, page: number, search?: string): Promise<FilteredProductsType>;
     getBySearch(perPage: number, page: number, search?: string): Promise<FilteredProductsType>;
+    findOne(id: number): Promise<Product | null>;
 }

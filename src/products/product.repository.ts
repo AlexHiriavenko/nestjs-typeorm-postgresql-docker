@@ -84,4 +84,8 @@ export class ProductRepository {
 
     return { products, totalPages, page, perPage };
   }
+
+  async findOne(id: number): Promise<Product | null> {
+    return await this.productRepository.findOneBy({ id });
+  }
 }

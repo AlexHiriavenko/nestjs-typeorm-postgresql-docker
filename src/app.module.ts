@@ -7,6 +7,7 @@ import { AppController } from './app.controller';
 import { AppService } from './app.service';
 import { CategoriesModule } from './categories/categories.module';
 import { ProductsModule } from './products/products.module';
+import { SocketModule } from './websocket/socket.module';
 
 @Module({
   imports: [
@@ -29,6 +30,7 @@ import { ProductsModule } from './products/products.module';
     BooksModule,
     CategoriesModule,
     ProductsModule,
+    SocketModule,
   ],
   controllers: [AppController],
   providers: [AppService],
