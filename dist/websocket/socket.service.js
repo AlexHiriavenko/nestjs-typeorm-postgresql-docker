@@ -89,6 +89,7 @@ exports.SocketService = SocketService = __decorate([
         cors: {
             origin: '*',
         },
+        transports: ['websocket'],
     }),
     __metadata("design:paramtypes", [product_service_1.ProductService])
 ], SocketService);

@@ -13,6 +13,7 @@ import { ProductService } from '@/products/product.service';
   cors: {
     origin: '*',
   },
+  transports: ['websocket'], // ✅ Добавили WebSocket
 })
 export class SocketService implements OnGatewayConnection {
   @WebSocketServer()

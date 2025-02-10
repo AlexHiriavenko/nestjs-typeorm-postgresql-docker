@@ -5,6 +5,6 @@ export declare class Product {
     article: number;
     color?: string;
     price?: number;
-    img: string;
+    img?: string;
     category: Category;
 }

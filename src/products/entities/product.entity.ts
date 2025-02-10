@@ -24,8 +24,8 @@ export class Product {
   @Column({ type: 'numeric', precision: 10, scale: 2, nullable: true })
   price?: number;
 
-  @Column({ length: 255 })
-  img: string;
+  @Column({ length: 255, nullable: true })
+  img?: string;
 
   @ManyToOne(() => Category, (category) => category.products, {
     onDelete: 'CASCADE',

@@ -94,18 +94,13 @@ async function updateBook(id, book) {
 
 //  вебсокет
 
-// function socketRun() {
-//   const socket = io(baseUrl_2);
-// }
-
-// const Socket = io.Socket;
-
 class SocketApi {
   static socket = null;
 
   static createConnection() {
     if (!this.socket || this.socket.disconnected) {
-      this.socket = io(baseUrl_2);
+      // this.socket = io(baseUrl_2);
+      this.socket = io(baseUrl_2, { transports: ['websocket'] });
 
       this.socket.on('connect', () => {
         console.log('connected');
@@ -141,7 +136,7 @@ const fetchProduct = (id) => {
 };
 
 if (SocketApi.socket) {
-  fetchProduct(69);
+  fetchProduct(5);
 } else {
-  setTimeout(() => fetchProduct(69), 2000);
+  setTimeout(() => fetchProduct(5), 2000);
 }

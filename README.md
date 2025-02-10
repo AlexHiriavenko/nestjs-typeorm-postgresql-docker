@@ -6,7 +6,9 @@
 2. docker-compose build
 3. docker-compose up -d
 4. npm i
-5. npm run start:dev
+5. npm run migration:run ()
+6. npm run seed
+7. npm run start:dev
 
 ## порты:
 
@@ -26,3 +28,8 @@ $ nest g class `name`/`name`.entity
 ## скрипты для миграций:
 
 смотрите в package.json
+
+## запросы в pg-admin
+
+- Выбери "Query Tool" в меню (или нажми F5 в окне SQL-запросов).
+- TRUNCATE TABLE migrations RESTART IDENTITY; ( очищает таблицу миграций, сбрасывает счетчик идентификаторов.)
